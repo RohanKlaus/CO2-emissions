@@ -10,7 +10,7 @@ from sklearn.ensemble import RandomForestRegressor
 # Creating Sidebar-------------------------------------------------------------------------------------------
 with st.sidebar:
     st.markdown("# CO2 Emissions by Vehicle")
-    user_input = st.selectbox('Please choose',('Visulization','Model'))
+    user_input = st.selectbox('Please select',('Visualization','Model'))
 
 # Load the vehicle dataset
 df = pd.read_csv('co2 Emissions.csv')
@@ -32,7 +32,7 @@ if user_input == 'Visualization':
 
     # Showing Dataset------------------------------------------------------------------------------------------
     st.title('CO2 Emissions by Vehicle')
-    st.header("Collected Data in Pictorial Form")
+    st.header("Data collected from the source:")
     st.write(df)
 
     # Brands of Cars-------------------------------------------------------------------------------------------
@@ -42,7 +42,7 @@ if user_input == 'Visualization':
     fig1 = sns.barplot(data=df_brand, x="Make", y="Count")
     plt.xticks(rotation=75)
     plt.title("All Car Companies and their Cars")
-    plt.xlabel("Names of Companies")
+    plt.xlabel("Companies")
     plt.ylabel("Number of Cars")
     plt.bar_label(fig1.containers[0], fontsize=7)
     st.pyplot()
@@ -141,7 +141,7 @@ if user_input == 'Visualization':
 
     # CO2 Emission variation with Brand----------------------------------------------------------------------
     st.header('Variation in CO2 emissions with different features:')
-    st.subheader('CO2 Emission with Brand: ')
+    st.subheader('CO2 Emission with Brand ')
     df_co2_make = df.groupby(['Make'])['CO2 Emissions(g/km)'].mean().sort_values().reset_index()
     fig8 = plt.figure(figsize=(20, 5))
     sns.barplot(data=df_co2_make, x="Make", y="CO2 Emissions(g/km)")
@@ -162,19 +162,19 @@ if user_input == 'Visualization':
         plt.bar_label(plt.gca().containers[0], fontsize=9)
 
     # CO2 Emissions variation with Vehicle Class-------------------------------------------------------------
-    st.subheader('CO2 Emissions variation with Vehicle Class:')
+    st.subheader('CO2 Emissions variation with Vehicle Class')
     df_co2_vehicle_class = df.groupby(['Vehicle Class'])['CO2 Emissions(g/km)'].mean().sort_values().reset_index()
     plot_bar(df_co2_vehicle_class, "Vehicle Class", "CO2 Emissions(g/km)", "CO2 Emissions variation with Vehicle Class")
     st.pyplot()
 
     # CO2 Emission variation with Transmission---------------------------------------------------------------
-    st.subheader('CO2 Emission variation with Transmission:')
+    st.subheader('CO2 Emission variation with Transmission')
     df_co2_transmission = df.groupby(['Transmission'])['CO2 Emissions(g/km)'].mean().sort_values().reset_index()
     plot_bar(df_co2_transmission, "Transmission", "CO2 Emissions(g/km)", "CO2 Emission variation with Transmission")
     st.pyplot()
 
     # CO2 Emissions variation with Fuel Type--------------------------------------------------------------
-    st.subheader('CO2 Emissions variation with Fuel Type:')
+    st.subheader('CO2 Emissions variation with Fuel Type')
     df_co2_fuel_type = df.groupby(['Fuel Type'])['CO2 Emissions(g/km)'].mean().sort_values().reset_index()
     plot_bar(df_co2_fuel_type, "Fuel Type", "CO2 Emissions(g/km)", "CO2 Emissions variation with Fuel Type")
     st.pyplot()
