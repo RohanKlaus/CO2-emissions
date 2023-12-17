@@ -5,7 +5,8 @@
 
 # CO2 Emissions Predictions by Cars 
 
-![Banner](https://github.com/RohanKlaus/CO2-emissions/blob/main/Cover.JPG)
+![Cover](https://github.com/RohanKlaus/CO2-emissions/assets/139590571/abab12ec-4210-403b-a4e7-89690f7baa63)
+
 
 <h3>Hey there,👨🏻‍💻</h3>
 <p>During my internship, I worked on a project titled <b>"CO2 Emission Prediction by Cars."</b> The aim was to predict the amount of Carbon Dioxide (CO2) a car would emit based on its data. I gathered information about different cars and their CO2 emissions. Using this data, I made use of advanced techniques to build a Machine Learning model that could accurately estimate CO2 emissions. This project not only showcased my skills in Data Analysis and Machine Learning but also aimed to contribute to understanding and reducing vehicle-related environmental impacts.</p>
@@ -64,7 +65,7 @@ pip install -r requirements.txt
 - The Random Forest model yielded the highest accuracy among these models and was selected for deployment.
 
 <p align="center">
-<img height="200" width="450" src="https://github.com/RohanKlaus/CO2-emissions/blob/main/Model%20Accuracy.PNG" alt="ModelBuilding">
+![Model Accuracy](https://github.com/RohanKlaus/CO2-emissions/assets/139590571/d072b494-3d76-4906-aa84-2fa95b625997)
 </p>
 
 # Deployment:
