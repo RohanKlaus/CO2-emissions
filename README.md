@@ -5,7 +5,7 @@
 
 # CO2 Emissions Predictions by Cars 
 
-![Banner](https://github.com/RohanKlaus/CO2-emissions/blob/main/Cover.jpg)
+![Banner](https://github.com/RohanKlaus/CO2-emissions/blob/main/Cover.JPG)
 
 <h3>Hey there,👨🏻‍💻</h3>
 <p>During my internship, I worked on a project titled <b>"CO2 Emission Prediction by Cars."</b> The aim was to predict the amount of Carbon Dioxide (CO2) a car would emit based on its data. I gathered information about different cars and their CO2 emissions. Using this data, I made use of advanced techniques to build a Machine Learning model that could accurately estimate CO2 emissions. This project not only showcased my skills in Data Analysis and Machine Learning but also aimed to contribute to understanding and reducing vehicle-related environmental impacts.</p>
