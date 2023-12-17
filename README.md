@@ -65,7 +65,7 @@ pip install -r requirements.txt
 - The Random Forest model yielded the highest accuracy among these models and was selected for deployment.
 
 <p align="center">
-![Model Accuracy](https://github.com/RohanKlaus/CO2-emissions/assets/139590571/d072b494-3d76-4906-aa84-2fa95b625997)
+<img height="170" width="650" src="![Model Accuracy](https://github.com/RohanKlaus/CO2-emissions/assets/139590571/d072b494-3d76-4906-aa84-2fa95b625997)" alt="ModelBuilding">
 </p>
 
 # Deployment:
